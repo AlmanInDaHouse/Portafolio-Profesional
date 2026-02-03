@@ -1,0 +1,75 @@
+﻿
+> portfolio-manuel-grande@0.1.0 build
+> vite build
+
+node.exe : 
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:Stri 
+   ng) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[36mvite v4.5.14 [32mbuilding for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 3 modules transformed.
+[32mÔ£ô built in 117ms[39m
+[31m[vite-plugin-svelte] C:/Users/manul/Downloads/
+Portafolio-Profesional-main/Portafolio-Profesional-
+main/src/routes/+page.svelte:57:28 Expected >[39m
+file: [36mC:/Users/manul/Downloads/Portafolio-Prof
+esional-main/Portafolio-Profesional-main/src/routes
+/+page.svelte:57:28[39m
+[33m 55 |    <div class="grid gap-6 grid-cols-1 
+md:grid-cols-2">
+ 56 |      {#each filtered as p (p.id)}
+ 57 |        <ProjectCard {project}={p} 
+on:open={openProject} />
+                                   ^
+ 58 |      {/each}
+ 59 |    </div>
+[39m
+[31merror during build:
+ParseError: Expected >
+    at error (file:///C:/Users/manul/Downloads/Port
+afolio-Profesional-main/Portafolio-Profesional-main
+/node_modules/svelte/src/compiler/utils/error.js:56
+:16)
+    at Parser.error (file:///C:/Users/manul/Downloa
+ds/Portafolio-Profesional-main/Portafolio-Profesion
+al-main/node_modules/svelte/src/compiler/parse/inde
+x.js:143:3)
+    at Parser.eat (file:///C:/Users/manul/Downloads
+/Portafolio-Profesional-main/Portafolio-Profesional
+-main/node_modules/svelte/src/compiler/parse/index.
+js:163:9)
+    at tag (file:///C:/Users/manul/Downloads/Portaf
+olio-Profesional-main/Portafolio-Profesional-main/n
+ode_modules/svelte/src/compiler/parse/state/tag.js:
+209:9)
+    at new Parser (file:///C:/Users/manul/Downloads
+/Portafolio-Profesional-main/Portafolio-Profesional
+-main/node_modules/svelte/src/compiler/parse/index.
+js:91:12)
+    at parse (file:///C:/Users/manul/Downloads/Port
+afolio-Profesional-main/Portafolio-Profesional-main
+/node_modules/svelte/src/compiler/parse/index.js:26
+8:17)
+    at Module.compile (file:///C:/Users/manul/Downl
+oads/Portafolio-Profesional-main/Portafolio-Profesi
+onal-main/node_modules/svelte/src/compiler/compile/
+index.js:136:14)
+    at compileSvelte (file:///C:/Users/manul/Downlo
+ads/Portafolio-Profesional-main/Portafolio-Profesio
+nal-main/node_modules/@sveltejs/vite-plugin-svelte/
+src/utils/compile.js:128:27)
+    at async Object.transform (file:///C:/Users/man
+ul/Downloads/Portafolio-Profesional-main/Portafolio
+-Profesional-main/node_modules/@sveltejs/vite-plugi
+n-svelte/src/index.js:223:20)
+    at async transform (file:///C:/Users/manul/Down
+loads/Portafolio-Profesional-main/Portafolio-Profes
+ional-main/node_modules/rollup/dist/es/shared/node-
+entry.js:24449:16)[39m

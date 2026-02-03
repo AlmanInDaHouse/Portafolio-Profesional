@@ -15,16 +15,28 @@ Cómo ejecutar (local)
    npm run build
    npm run preview
 
-Deploy a GitHub Pages
+## 🚀 Deploy a GitHub Pages
 
-Este repo está configurado para desplegarse en GitHub Pages como una página de proyecto. El workflow de GitHub Actions construye la aplicación (adapter-static) y publica el contenido estático en Pages.
+Este portafolio está configurado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
 
-URL de acceso una vez desplegado (espera unos minutos tras el primer push):
-https://AlmanInDaHouse.github.io/Portafolio-Profesional
+### Despliegue Rápido
 
-Notas:
-- SvelteKit usa kit.paths.base = '/Portafolio-Profesional' para que los assets funcionen en la URL del repo. Si cambias el nombre del repo, actualiza esa configuración.
-- Para publicar como user page (AlmanInDaHouse.github.io) necesitarías un repo con ese nombre y cambiar base a ''.
+1. Crea un repositorio en GitHub (público)
+2. Sube el código con `git push`
+3. Habilita GitHub Pages en Settings > Pages > Source: GitHub Actions
+4. ¡Listo! Tu sitio estará en `https://TU-USUARIO.github.io/NOMBRE-REPO`
+
+**Para instrucciones detalladas paso a paso, consulta [DEPLOY.md](DEPLOY.md)**
+
+### URL de Ejemplo
+```
+https://TU-USUARIO.github.io/Portafolio-Profesional
+```
+
+### Notas Importantes
+- El repositorio debe ser **público** para usar GitHub Pages gratis
+- El workflow se ejecuta automáticamente en cada push a `main`
+- Si cambias el nombre del repositorio, actualiza `base` en `svelte.config.js` (línea 15)
 
 Contacto
 - Tel: 644 55 12 93

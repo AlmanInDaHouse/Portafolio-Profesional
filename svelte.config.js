@@ -13,9 +13,6 @@ export default {
     }),
     paths: {
       base: dev ? '' : '/Portafolio-Profesional'
-    },
-    prerender: {
-      default: true
     }
   }
 };
