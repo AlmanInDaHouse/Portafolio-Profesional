@@ -54,7 +54,7 @@
 
   <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
     {#each filtered as p (p.id)}
-      <ProjectCard {project}={p} on:open={openProject} />
+      <ProjectCard project={p} on:open={openProject} />
     {/each}
   </div>
 </section>
@@ -64,5 +64,5 @@
 <Contact phone="644551293" email="manuelgrandeecija1@gmail.com" />
 
 {#if activeProject}
-  <ProjectModal {project} on:close={closeModal} />
+  <ProjectModal project={activeProject} on:close={closeModal} />
 {/if}
