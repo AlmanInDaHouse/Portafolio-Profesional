@@ -1,8 +1,11 @@
 <script>
-  export let name = 'Manuel Grande';
+  import { base } from "$app/paths";
+  export let name = "Manuel Grande";
 </script>
 
-<section class="min-h-[60vh] flex items-center justify-center bg-animated py-16">
+<section
+  class="min-h-[60vh] flex items-center justify-center bg-animated py-16"
+>
   <div class="max-w-4xl text-center px-6">
     <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
       Hola, soy <span class="text-accent">{name}</span>
@@ -13,10 +16,17 @@
     </p>
 
     <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/resume.pdf" class="inline-flex items-center px-6 py-3 rounded-md bg-primary text-white hover:opacity-90" download>
+      <a
+        href="{base}/resume.pdf"
+        class="inline-flex items-center px-6 py-3 rounded-md bg-primary text-white hover:opacity-90"
+        download
+      >
         Descargar CV
       </a>
-      <a href="#proyectos" class="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary bg-white/60 hover:bg-white/80">
+      <a
+        href="#proyectos"
+        class="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary bg-white/60 hover:bg-white/80"
+      >
         Ver proyectos
       </a>
     </div>
