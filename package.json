@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --open",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "npx vite dev --open",
+    "build": "npx vite build",
+    "preview": "npx vite preview",
     "lint": "prettier --check ."
   },
   "devDependencies": {
