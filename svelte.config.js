@@ -9,7 +9,9 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: null
+      fallback: null,
+      precompress: false,
+      strict: true
     }),
     paths: {
       base: dev ? '' : '/Portafolio-Profesional'
