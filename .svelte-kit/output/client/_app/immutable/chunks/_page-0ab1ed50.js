@@ -1,0 +1,1 @@
+import{a as e}from"./projects-9ac18a08.js";function t({params:r}){const o=e(r.slug);return o?{project:o}:{status:404,error:new Error("Proyecto no encontrado")}}const a=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{a as _,t as l};

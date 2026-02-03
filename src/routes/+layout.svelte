@@ -2,6 +2,9 @@
   import "../app.css";
   import { base } from "$app/paths";
   import { onMount } from "svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
+  import Footer from "$lib/components/Footer.svelte";
+
   let dark = false;
 
   onMount(() => {
@@ -30,27 +33,13 @@
 </script>
 
 <div
-  class="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100"
+  class="min-h-screen bg-gradient-to-b from-[var(--bg-primary)] to-[var(--bg-secondary)] text-[var(--text-primary)]"
 >
-  <header class="py-4 px-6 flex justify-between items-center max-w-6xl mx-auto">
-    <a href="{base}/" class="font-bold">Manuel Grande</a>
-    <div class="flex items-center gap-4">
-      <nav class="hidden sm:flex gap-4">
-        <a href="#sobre-mi" class="text-sm">Sobre mí</a>
-        <a href="#proyectos" class="text-sm">Proyectos</a>
-        <a href="#contacto" class="text-sm">Contacto</a>
-      </nav>
-      <button class="px-3 py-1 border rounded" on:click={toggleTheme}
-        >{dark ? "🌙" : "☀️"}</button
-      >
-    </div>
-  </header>
+  <Navbar {dark} {toggleTheme} />
 
-  <main>
+  <main class="pt-20">
     <slot />
   </main>
 
-  <footer class="py-8 text-center text-sm text-gray-600 dark:text-gray-400">
-    © {new Date().getFullYear()} Manuel Grande · Tel: 644 55 12 93 · manuelgrandeecija1@gmail.com
-  </footer>
+  <Footer />
 </div>
